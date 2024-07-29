@@ -8,7 +8,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Define the /send-email endpoint
-app.post('/sendemail', (req, res) => {
+app.post('contact/sendemail', (req, res) => {
     const { name, email, message } = req.body;
   
     const transporter = nodemailer.createTransport({
