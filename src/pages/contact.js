@@ -17,7 +17,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('https://api-testing-form.vercel.app/sendemail', {
+    fetch('https://api-testing-form.vercel.app/contact/sendemail', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
